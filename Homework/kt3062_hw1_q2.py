@@ -1,3 +1,10 @@
+'''
+Kenny Tang
+CS UY 1134
+24 September 2025
+Homework 1 Question 2
+'''
+
 #part a
 def shift_a(lst, k):
     for i in range(k):
