@@ -1,15 +1,16 @@
-def shift(lst, k, dir="left"):
-  if dir = "left":
-    tmp = lst[:k]
-    for i in range (k, len(lst)):
-      lst [i - k] = lst[i]
-    for i in range(len(tmp)):
-      lst[len(lst)- k + i) = tmp = i
-  else:
-    tmp = lst[-k:]
-    for i in range(len(lst) - k):
-      lst[len(lst) - i - 1) = lst(len(lst) - i - k - 1]
-    for i in range(len(temp)):
-      lst[i] = tmp[i]
+#part a
+def shift_a(lst, k):
+    for i in range(k):
+        lst.append(lst.pop(0))
+    return lst
+
+#part b
+def shift_b(lst, k, direction="left"):
+    if direction == "left":
+        for i in range(k):
+            lst.append(lst.pop(0))
+    elif direction == "right":
+        for i in range(k):
+            lst.insert(0,lst.pop(-1))
     return lst
   
